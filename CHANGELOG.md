@@ -114,3 +114,5 @@
 
 - [2026-11-14 02:14:06] feat(projects): add AI-powered task manager project
 
+- [2026-11-14 02:14:06] feat(projects): add DevSphere collaborative workspace
+
