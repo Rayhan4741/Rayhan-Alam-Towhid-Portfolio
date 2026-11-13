@@ -40,3 +40,5 @@
 
 - [2026-11-14 02:14:01] feat(hero): add floating tech stack badge
 
+- [2026-11-14 02:14:01] feat(hero): add floating experience badge
+
