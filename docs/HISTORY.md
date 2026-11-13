@@ -24,3 +24,4 @@
 - [2026-11-14 02:52:50] **Commit 22/43**: style(buttons): refine magnetic button press micro-interaction
 - [2026-11-14 02:53:50] **Commit 23/43**: perf(render): memoize project filter pill callbacks
 - [2026-11-14 02:54:50] **Commit 24/43**: feat(seo): add sitemap and robots.txt generation helper
+- [2026-11-14 02:55:50] **Commit 25/43**: docs(license): confirm MIT license metadata in repository config
