@@ -24,3 +24,5 @@
 
 - [2026-11-14 02:14:00] feat(navbar): add scroll spy active section observer
 
+- [2026-11-14 02:14:00] feat(navbar): implement mobile hamburger drawer menu
+
