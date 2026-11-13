@@ -54,3 +54,5 @@
 
 - [2026-11-14 02:14:02] feat(about): describe preferred backend architectures
 
+- [2026-11-14 02:14:02] feat(about): add personality traits and core work ethics
+
