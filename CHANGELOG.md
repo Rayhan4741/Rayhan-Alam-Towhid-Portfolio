@@ -26,3 +26,5 @@
 
 - [2026-11-14 02:14:00] feat(navbar): implement mobile hamburger drawer menu
 
+- [2026-11-14 02:14:00] feat(navbar): add resume action button in header
+
