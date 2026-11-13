@@ -128,3 +128,5 @@
 
 - [2026-11-14 02:14:07] feat(project-detail): render tech stack badge cloud
 
+- [2026-11-14 02:14:07] feat(project-detail): add project description and architecture
+
