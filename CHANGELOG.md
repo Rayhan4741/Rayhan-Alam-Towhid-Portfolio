@@ -174,3 +174,5 @@
 
 - [2026-11-14 02:14:10] refactor(data): standardize project client repository links
 
+- [2026-11-14 02:14:11] docs(readme): add feature requirements checklist
+
