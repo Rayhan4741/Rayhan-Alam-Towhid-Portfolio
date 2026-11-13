@@ -100,3 +100,5 @@
 
 - [2026-11-14 02:14:05] feat(projects): create featured projects section layout
 
+- [2026-11-14 02:14:05] feat(projects): design project card with hover zoom
+
