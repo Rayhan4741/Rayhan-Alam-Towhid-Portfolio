@@ -13,3 +13,4 @@
 - [2026-11-14 02:41:48] **Commit 11/43**: style(skills): refine category badge hover elevation transition
 - [2026-11-14 02:42:48] **Commit 12/43**: fix(contact): add honeypot field for bot spam prevention
 - [2026-11-14 02:43:49] **Commit 13/43**: refactor(projects): enhance card transition hover transform duration
+- [2026-11-14 02:44:49] **Commit 14/43**: style(modal): polish resume modal backdrop blur intensity
