@@ -196,3 +196,5 @@
 
 - [2026-11-14 02:14:12] test(navigation): verify smooth scroll anchor behavior
 
+- [2026-11-14 02:14:12] test(modal): verify resume modal open and close flow
+
