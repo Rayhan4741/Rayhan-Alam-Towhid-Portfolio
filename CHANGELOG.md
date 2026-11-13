@@ -194,3 +194,5 @@
 
 - [2026-11-14 02:14:12] test(layout): verify mobile viewport responsiveness
 
+- [2026-11-14 02:14:12] test(navigation): verify smooth scroll anchor behavior
+
