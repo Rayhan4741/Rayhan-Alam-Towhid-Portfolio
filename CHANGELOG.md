@@ -28,3 +28,5 @@
 
 - [2026-11-14 02:14:00] feat(navbar): add resume action button in header
 
+- [2026-11-14 02:14:00] style(navbar): apply blur backdrop and sticky shadow
+
