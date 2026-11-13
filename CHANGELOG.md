@@ -78,3 +78,5 @@
 
 - [2026-11-14 02:14:04] feat(skills): add category summary metric cards
 
+- [2026-11-14 02:14:04] feat(education): create academic qualification timeline
+
