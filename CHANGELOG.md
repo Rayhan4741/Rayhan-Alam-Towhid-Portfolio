@@ -162,3 +162,5 @@
 
 - [2026-11-14 02:14:10] feat(resume): generate standalone resume.html document
 
+- [2026-11-14 02:14:10] style(resume): calibrate resume print stylesheet
+
