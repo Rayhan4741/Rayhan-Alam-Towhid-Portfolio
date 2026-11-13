@@ -120,3 +120,5 @@
 
 - [2026-11-14 02:14:07] feat(routing): set up dynamic route /projects/[id]
 
+- [2026-11-14 02:14:07] feat(routing): implement generateStaticParams for SSG
+
