@@ -26,3 +26,4 @@ FEATURED PROJECTS
 - Real-Time Collaborative Chat: Sub-50ms WebSocket messaging platform with Socket.io, MongoDB, and Tailwind CSS.
 - AI-Powered Task Manager: Agile sprint velocity planner with FastAPI, Next.js, and streaming AI recommendations.
 - DevSphere: Collaborative code editing and live pair-programming workspace with Monaco Editor.
+

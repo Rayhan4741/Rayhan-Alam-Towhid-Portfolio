@@ -5,114 +5,63 @@ import {
   Download, 
   Printer, 
   Mail, 
-  Phone, 
-  MapPin, 
   ExternalLink, 
-  CheckCircle2,
-  FileText
+  FileText, 
+  Award, 
+  BookOpen, 
+  Briefcase, 
+  Wrench, 
+  Globe, 
+  Heart,
+  CheckCircle2
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
-  const { personal, about, skills, education, experience, projects } = portfolioData;
+  const { personal, education, experience, achievements } = portfolioData;
 
   const handlePrint = () => {
     window.print();
   };
 
   const handleDownload = () => {
-    if (personal.resumeDownloadPath) {
-      const a = document.createElement('a');
-      a.href = personal.resumeDownloadPath;
-      a.download = 'Rayhan_Alam_Towhid_Resume.pdf';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      return;
-    }
-    const resumeText = `
-=====================================================
-${personal.name.toUpperCase()} - ${personal.designation.toUpperCase()}
-=====================================================
-Email: ${personal.email}
-Location: ${personal.location}
-GitHub: https://github.com/Rayhan4741
-LinkedIn: https://linkedin.com/in/rayhanalam
-
-PROFESSIONAL SUMMARY
---------------------
-${about.summary}
-${about.journey}
-
-WORK EXPERIENCE
----------------
-${experience.map(exp => `
-* ${exp.role} | ${exp.company} (${exp.period})
-  Location: ${exp.location} | Type: ${exp.employmentType}
-  Description: ${exp.description}
-  Key Contributions:
-  ${exp.contributions.map(c => `  - ${c}`).join('\n')}
-  Technologies: ${exp.technologies.join(', ')}
-`).join('\n')}
-
-TECHNICAL SKILLS
-----------------
-* Frontend: ${skills.frontend.map(s => s.name).join(', ')}
-* Backend: ${skills.backend.map(s => s.name).join(', ')}
-* Databases: ${skills.databases.map(s => s.name).join(', ')}
-* Tools & DevOps: ${skills.tools.map(s => s.name).join(', ')}
-
-EDUCATION QUALIFICATION
------------------------
-${education.map(edu => `
-* ${edu.degree}
-  Institution: ${edu.institution} (${edu.period})
-  Result: ${edu.grade}
-  ${edu.highlights.map(h => `  - ${h}`).join('\n')}
-`).join('\n')}
-
-FEATURED PROJECTS
------------------
-${projects.map(p => `
-* ${p.name}
-  Stack: ${p.techStack.join(', ')}
-  Description: ${p.briefDescription}
-  Live Demo: ${p.liveLink}
-  Client GitHub: ${p.clientRepoLink}
-`).join('\n')}
-=====================================================
-    `.trim();
-
-    const file = new Blob([resumeText], { type: 'text/plain;charset=utf-8' });
-    element.href = URL.createObjectURL(file);
-    element.download = `${personal.name.replace(/\s+/g, '_')}_Resume.txt`;
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
+    // Open resume.html or initiate download
+    const a = document.createElement('a');
+    a.href = '/resume.html';
+    a.target = '_blank';
+    a.download = 'Rayhan_Alam_Towhid_Resume.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md animate-in fade-in">
       <div 
-        className="relative w-full max-w-4xl max-h-[90vh] bg-slate-900 border border-slate-700 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
+        className="relative w-full max-w-4xl max-h-[92vh] bg-slate-900 border border-slate-700/80 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Top Action Bar */}
         <div className="p-4 sm:p-5 bg-slate-950 border-b border-slate-800 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <FileText className="w-5 h-5 text-emerald-400" />
-            <h3 className="text-base font-bold text-white">
-              {personal.name} — Curriculum Vitae
-            </h3>
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+              <FileText className="w-4 h-4" />
+            </div>
+            <div>
+              <h3 className="text-sm sm:text-base font-bold text-white leading-tight">
+                {personal.name} — Curriculum Vitae
+              </h3>
+              <span className="text-[11px] font-mono text-emerald-400">Official Resume Document</span>
+            </div>
           </div>
 
           <div className="flex items-center gap-2">
             <button
               onClick={handleDownload}
               className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold text-xs hover:from-emerald-400 hover:to-cyan-400 transition-colors shadow-sm"
-              title="Download text resume"
+              title="Download Resume HTML"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Download</span>
@@ -127,6 +76,17 @@ ${projects.map(p => `
               <span>Print / PDF</span>
             </button>
 
+            <a
+              href="/resume.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-1 px-3 py-1.5 rounded-xl bg-slate-800/80 text-cyan-400 font-medium text-xs hover:bg-slate-700 border border-slate-700"
+              title="Open full page"
+            >
+              <ExternalLink className="w-3.5 h-3.5" />
+              <span>Full View</span>
+            </a>
+
             <button
               onClick={onClose}
               className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
@@ -138,79 +98,153 @@ ${projects.map(p => `
         </div>
 
         {/* Scrollable Document Body */}
-        <div className="p-6 sm:p-10 overflow-y-auto space-y-8 text-slate-200 text-sm leading-relaxed bg-slate-900">
+        <div className="p-6 sm:p-10 overflow-y-auto space-y-7 text-slate-200 text-sm leading-relaxed bg-[#0b0f19]">
           
           {/* Resume Header */}
-          <div className="border-b border-slate-800 pb-6">
-            <h1 className="text-2xl sm:text-3xl font-black text-white">{personal.name}</h1>
-            <p className="text-emerald-400 font-mono font-bold text-base mt-1">{personal.designation}</p>
-            <div className="flex flex-wrap gap-4 mt-3 text-xs text-slate-400 font-mono">
-              <span className="flex items-center gap-1"><Mail className="w-3 h-3 text-emerald-400" /> {personal.email}</span>
-              <span className="flex items-center gap-1"><MapPin className="w-3 h-3 text-slate-400" /> {personal.location}</span>
+          <div className="text-center border-b border-slate-800/90 pb-6">
+            <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">{personal.name}</h1>
+            <p className="text-emerald-400 font-mono font-semibold text-sm sm:text-base mt-1.5">
+              Software Engineer | Problem Solver | Curious Learner
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-3 text-xs text-slate-400 font-mono">
+              <a href={`mailto:${personal.email}`} className="text-slate-300 hover:text-emerald-400 transition-colors">
+                {personal.email}
+              </a>
+              <span>•</span>
+              <a href="https://www.linkedin.com/in/rayhan18-cse-baiust/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">
+                LinkedIn
+              </a>
+              <span>•</span>
+              <a href="https://github.com/Rayhan6244" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">
+                GitHub (@Rayhan6244)
+              </a>
+              <span>•</span>
+              <span className="text-slate-400">Cumilla, BD</span>
             </div>
           </div>
 
-          {/* Summary */}
+          {/* Section: Objective */}
           <div>
-            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-2">Professional Summary</h2>
-            <p className="text-slate-300 text-sm">{about.summary}</p>
+            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-2 pb-1 border-b border-slate-800">
+              Objective
+            </h2>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Driven Computer Science student and aspiring Software Engineer with a strong foundation in algorithms, C/C++, JavaScript, Node.js, and databases. Proven experience in competitive programming, high-pressure hackathons, and full-stack product development. Dedicated to solving complex challenges and building scalable, impactful applications.
+            </p>
           </div>
 
-          {/* Experience */}
+          {/* Section: Skills */}
           <div>
-            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-4">Work Experience</h2>
-            <div className="space-y-5">
-              {experience.map((exp, idx) => (
-                <div key={idx} className="space-y-1.5">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between">
-                    <span className="font-bold text-white text-base">{exp.role} — <span className="text-cyan-400 font-normal">{exp.company}</span></span>
-                    <span className="text-xs font-mono text-slate-400">{exp.period}</span>
-                  </div>
-                  <p className="text-xs text-slate-400">{exp.description}</p>
-                  <ul className="list-disc list-inside space-y-1 text-xs text-slate-300 pt-1">
-                    {exp.contributions.map((c, cIdx) => (
-                      <li key={cIdx}>{c}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+              <Wrench className="w-3.5 h-3.5" />
+              <span>Technical Skills</span>
+            </h2>
+            <div className="space-y-1.5 text-xs sm:text-sm">
+              <p><strong className="text-white">Programming Languages:</strong> <span className="text-slate-300">JavaScript, C, C++, Python, SQL</span></p>
+              <p><strong className="text-white">Web Technologies:</strong> <span className="text-slate-300">React, Next.js, TailwindCSS, HTML5, CSS3</span></p>
+              <p><strong className="text-white">Backend & Server:</strong> <span className="text-slate-300">Node.js, Express.js, Firebase, Docker</span></p>
+              <p><strong className="text-white">Databases:</strong> <span className="text-slate-300">MongoDB, MySQL, Firebase</span></p>
+              <p><strong className="text-white">Tools & Platforms:</strong> <span className="text-slate-300">Git, GitHub, Linux, Vercel, Netlify, Figma</span></p>
+              <p><strong className="text-white">Soft Skills:</strong> <span className="text-slate-300">Leadership, Communication, Adaptability</span></p>
             </div>
           </div>
 
-          {/* Education */}
+          {/* Section: Experience */}
           <div>
-            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">Education</h2>
+            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+              <Briefcase className="w-3.5 h-3.5" />
+              <span>Experience</span>
+            </h2>
             <div className="space-y-4">
-              {education.map((edu, idx) => (
-                <div key={idx} className="space-y-1">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between">
-                    <span className="font-bold text-white">{edu.degree}</span>
-                    <span className="text-xs font-mono text-slate-400">{edu.period}</span>
-                  </div>
-                  <div className="text-xs text-cyan-400">{edu.institution} | <span className="text-emerald-400 font-semibold">{edu.grade}</span></div>
+              <div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                  <h3 className="font-bold text-white text-sm sm:text-base">Backend Developer</h3>
+                  <span className="text-xs font-mono text-cyan-400">July 2025 – September 2025</span>
                 </div>
-              ))}
+                <ul className="list-disc list-inside mt-1 text-xs sm:text-sm text-slate-300 space-y-1">
+                  <li>Delivered multiple projects, collaborating with clients internationally, including a short-term engagement with an Indian company.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                  <h3 className="font-bold text-white text-sm sm:text-base">Mini Internship</h3>
+                  <span className="text-xs font-mono text-cyan-400">2025 (4-Month Continuing)</span>
+                </div>
+                <ul className="list-disc list-inside mt-1 text-xs sm:text-sm text-slate-300 space-y-1">
+                  <li>Continuing a 4-month internship focused on real-world application development using modern web technologies.</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          {/* Technical Skills */}
+          {/* Section: Achievements & Awards */}
           <div>
-            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-2">Technical Skills</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-              <div><strong className="text-slate-200">Frontend:</strong> <span className="text-slate-400">{skills.frontend.map(s => s.name).join(', ')}</span></div>
-              <div><strong className="text-slate-200">Backend:</strong> <span className="text-slate-400">{skills.backend.map(s => s.name).join(', ')}</span></div>
-              <div><strong className="text-slate-200">Databases:</strong> <span className="text-slate-400">{skills.databases.map(s => s.name).join(', ')}</span></div>
-              <div><strong className="text-slate-200">DevOps & Tools:</strong> <span className="text-slate-400">{skills.tools.map(s => s.name).join(', ')}</span></div>
+            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+              <Award className="w-3.5 h-3.5 text-amber-400" />
+              <span>Achievements & Awards</span>
+            </h2>
+            <div className="space-y-2 text-xs sm:text-sm">
+              <div className="flex items-start gap-2 text-slate-300">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <span><strong className="text-white">Champion - 2025:</strong> BAIUST CSE Fest – Comilla, BD</span>
+              </div>
+              <div className="flex items-start gap-2 text-slate-300">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <span><strong className="text-white">Top 10 Finalist - 2025:</strong> Technovation 2025 – National Hackathon, Dhaka, BD</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Section: Education */}
+          <div>
+            <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Education</span>
+            </h2>
+            <div className="space-y-1.5 text-xs sm:text-sm">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                <span className="font-bold text-white text-sm">
+                  Bangladesh Army International University of Science and Technology (BAIUST)
+                </span>
+                <span className="text-xs font-mono text-slate-400">Cumilla, BD</span>
+              </div>
+              <p className="text-cyan-400 font-medium">BSc in Computer Science and Engineering (Apr 2024 – Mar 2028)</p>
+              <p className="text-emerald-400 font-mono font-semibold">Current CGPA: 3.70 / 4.00</p>
+            </div>
+          </div>
+
+          {/* Section: Extracurricular Activities & Languages */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+            <div>
+              <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-2 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+                <Heart className="w-3.5 h-3.5 text-rose-400" />
+                <span>Extracurricular Activities</span>
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Travelling, Playing football, Gaming, Running, Reading Books.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-2 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+                <Globe className="w-3.5 h-3.5 text-cyan-400" />
+                <span>Languages</span>
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Bangla (Native), English (Fluent), Hindi (Comfortable)
+              </p>
             </div>
           </div>
 
         </div>
 
         {/* Modal Bottom Close */}
-        <div className="p-4 bg-slate-950 border-t border-slate-800 flex justify-end">
+        <div className="p-4 bg-slate-950 border-t border-slate-800 flex items-center justify-between">
+          <span className="text-xs font-mono text-slate-500">Press Esc or Close to return</span>
           <button
             onClick={onClose}
-            className="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-medium transition-colors"
+            className="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-medium transition-colors cursor-pointer"
           >
             Close
           </button>
@@ -219,4 +253,3 @@ ${projects.map(p => `
     </div>
   );
 }
-
