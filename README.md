@@ -109,3 +109,4 @@ A modern, high-performance, and fully responsive personal portfolio website buil
 2. Build command: `npm run build`
 3. Publish directory: `.next`
 4. Deploy site.
+
