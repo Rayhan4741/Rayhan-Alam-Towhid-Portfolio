@@ -202,3 +202,5 @@
 
 - [2026-11-14 02:14:12] test(build): verify Next.js static page generation
 
+- [2026-11-14 02:14:12] chore(changelog): update release history and milestones
+
