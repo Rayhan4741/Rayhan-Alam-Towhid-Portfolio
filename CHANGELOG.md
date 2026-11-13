@@ -46,3 +46,5 @@
 
 - [2026-11-14 02:14:01] feat(hero): embed social media profile buttons
 
+- [2026-11-14 02:14:02] feat(hero): add quick statistics counter pills
+
