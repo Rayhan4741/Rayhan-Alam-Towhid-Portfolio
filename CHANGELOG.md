@@ -84,3 +84,5 @@
 
 - [2026-11-14 02:14:04] feat(education): add 1st CSE Fest Champion distinction
 
+- [2026-11-14 02:14:04] feat(education): add Technovation hackathon finalist highlight
+
