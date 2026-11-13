@@ -32,3 +32,4 @@
 - [2026-11-14 03:00:51] **Commit 30/43**: refactor(contact): enhance form submission status feedback animation
 - [2026-11-14 03:01:51] **Commit 31/43**: perf(next): enable modern compression options in next configuration
 - [2026-11-14 03:02:51] **Commit 32/43**: style(typography): optimize heading letter-spacing across section headers
+- [2026-11-14 03:03:52] **Commit 33/43**: refactor(modal): attach escape key listener for quick modal dismissal
