@@ -172,3 +172,5 @@
 
 - [2026-11-14 02:14:10] feat(profile): update GitHub handle to Rayhan4741 across all files
 
+- [2026-11-14 02:14:10] refactor(data): standardize project client repository links
+
