@@ -132,3 +132,5 @@
 
 - [2026-11-14 02:14:07] feat(project-detail): add challenges faced and solutions applied
 
+- [2026-11-14 02:14:08] feat(project-detail): add potential improvements and future plans
+
