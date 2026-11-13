@@ -90,3 +90,5 @@
 
 - [2026-11-14 02:14:04] feat(education): add HSC academic card and GPA
 
+- [2026-11-14 02:14:05] feat(experience): build career milestones timeline
+
