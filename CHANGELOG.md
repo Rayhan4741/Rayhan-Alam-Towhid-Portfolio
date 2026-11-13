@@ -58,3 +58,5 @@
 
 - [2026-11-14 02:14:02] feat(about): create extracurricular activities and hobbies grid
 
+- [2026-11-14 02:14:02] feat(about): add football and sports hobby card
+
