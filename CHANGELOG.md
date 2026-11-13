@@ -88,3 +88,5 @@
 
 - [2026-11-14 02:14:04] feat(education): add core computer science coursework list
 
+- [2026-11-14 02:14:04] feat(education): add HSC academic card and GPA
+
