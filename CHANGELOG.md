@@ -146,3 +146,5 @@
 
 - [2026-11-14 02:14:08] feat(contact): add client-side form validation
 
+- [2026-11-14 02:14:09] feat(contact): add submission feedback toast
+
