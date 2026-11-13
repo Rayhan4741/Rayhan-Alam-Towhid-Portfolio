@@ -10,3 +10,5 @@
 
 - [2026-11-14 02:13:59] style(globals): add background radial gradient and dot grid
 
+- [2026-11-14 02:13:59] style(globals): add gradient text utilities
+
