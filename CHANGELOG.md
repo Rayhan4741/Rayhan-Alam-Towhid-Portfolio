@@ -42,3 +42,5 @@
 
 - [2026-11-14 02:14:01] feat(hero): add floating experience badge
 
+- [2026-11-14 02:14:01] feat(hero): add primary CTA buttons for resume and projects
+
