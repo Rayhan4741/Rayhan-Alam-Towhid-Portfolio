@@ -20,3 +20,4 @@
 - [2026-11-14 02:48:49] **Commit 18/43**: refactor(experience): format timeline connecting borders with dashed styling
 - [2026-11-14 02:49:49] **Commit 19/43**: style(education): highlight BAIUST honors and CGPA with gradient badge
 - [2026-11-14 02:50:50] **Commit 20/43**: fix(resume): verify print media query styles for clean PDF export
+- [2026-11-14 02:51:50] **Commit 21/43**: refactor(types): export standalone ProjectCategory union type
