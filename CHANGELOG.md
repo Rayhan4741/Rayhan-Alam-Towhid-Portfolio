@@ -156,3 +156,5 @@
 
 - [2026-11-14 02:14:09] feat(footer): add smooth scroll-to-top button
 
+- [2026-11-14 02:14:09] feat(resume): build interactive resume modal viewer
+
