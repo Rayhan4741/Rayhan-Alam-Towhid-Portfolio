@@ -6,3 +6,5 @@
 
 - [2026-11-14 02:13:59] style(globals): add custom scrollbar styles in globals.css
 
+- [2026-11-14 02:13:59] style(globals): add glassmorphism utility classes
+
