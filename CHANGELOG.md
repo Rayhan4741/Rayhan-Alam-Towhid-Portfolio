@@ -60,3 +60,5 @@
 
 - [2026-11-14 02:14:02] feat(about): add football and sports hobby card
 
+- [2026-11-14 02:14:03] feat(about): add tech literature reading card
+
