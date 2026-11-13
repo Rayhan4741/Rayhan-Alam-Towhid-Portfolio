@@ -34,3 +34,5 @@
 
 - [2026-11-14 02:14:00] feat(hero): add dynamic title switcher animation
 
+- [2026-11-14 02:14:01] feat(hero): integrate profile photo container
+
