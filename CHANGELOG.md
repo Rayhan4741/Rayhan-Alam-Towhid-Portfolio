@@ -166,3 +166,5 @@
 
 - [2026-11-14 02:14:10] fix(contact): remove phone number per user preference
 
+- [2026-11-14 02:14:10] feat(profile): integrate Rayhan Alam Towhid profile photo
+
