@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { 
   Code2, 
   Server, 
@@ -8,14 +8,14 @@ import {
   Wrench, 
   Layers, 
   Sparkles,
-  CheckCircle,
-  TrendingUp
+  CheckCircle
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
+import { SkillItem } from '../types/portfolio';
 
 export default function Skills() {
   const { skills } = portfolioData;
-  const [activeTab, setActiveTab] = useState('all');
+  const [activeTab, setActiveTab] = useState<string>('all');
 
   const categories = [
     { id: 'all', name: 'All Skills', icon: Layers },
@@ -25,7 +25,7 @@ export default function Skills() {
     { id: 'tools', name: 'Tools & DevOps', icon: Wrench },
   ];
 
-  const getFilteredSkills = () => {
+  const getFilteredSkills = (): SkillItem[] => {
     if (activeTab === 'all') {
       return [
         ...skills.frontend.map(s => ({ ...s, category: 'Frontend' })),
@@ -34,7 +34,7 @@ export default function Skills() {
         ...skills.tools.map(s => ({ ...s, category: 'Tools & DevOps' })),
       ];
     }
-    return skills[activeTab].map(s => ({ ...s, category: categories.find(c => c.id === activeTab)?.name }));
+    return skills[activeTab]?.map(s => ({ ...s, category: categories.find(c => c.id === activeTab)?.name })) || [];
   };
 
   const filteredSkills = getFilteredSkills();
@@ -132,20 +132,20 @@ export default function Skills() {
         {/* Skill Category Summary Cards */}
         <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
-            <div className="text-emerald-400 font-mono font-bold text-2xl">7+</div>
-            <div className="text-xs text-slate-400 mt-1">Frontend Libraries</div>
+            <div className="text-emerald-400 font-mono font-bold text-2xl">5+</div>
+            <div className="text-xs text-slate-400 mt-1">Web Technologies</div>
           </div>
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
             <div className="text-cyan-400 font-mono font-bold text-2xl">5+</div>
             <div className="text-xs text-slate-400 mt-1">Backend Frameworks</div>
           </div>
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
-            <div className="text-purple-400 font-mono font-bold text-2xl">5+</div>
-            <div className="text-xs text-slate-400 mt-1">Database Engines</div>
+            <div className="text-purple-400 font-mono font-bold text-2xl">4+</div>
+            <div className="text-xs text-slate-400 mt-1">Databases & Clouds</div>
           </div>
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
             <div className="text-amber-400 font-mono font-bold text-2xl">6+</div>
-            <div className="text-xs text-slate-400 mt-1">DevOps & Cloud Tools</div>
+            <div className="text-xs text-slate-400 mt-1">DevOps & Platforms</div>
           </div>
         </div>
 
@@ -153,4 +153,3 @@ export default function Skills() {
     </section>
   );
 }
-

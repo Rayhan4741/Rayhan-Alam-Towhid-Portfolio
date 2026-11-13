@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Link from 'next/link';
 import { 
   ArrowUp, 
@@ -9,7 +10,6 @@ import {
   Linkedin, 
   Twitter, 
   Facebook, 
-  MessageSquare,
   Code2
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
@@ -21,14 +21,13 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const getSocialIcon = (name) => {
+  const getSocialIcon = (name: string) => {
     switch (name.toLowerCase()) {
       case 'github': return <Github className="w-4 h-4" />;
       case 'linkedin': return <Linkedin className="w-4 h-4" />;
       case 'twitter':
       case 'twitter / x': return <Twitter className="w-4 h-4" />;
       case 'facebook': return <Facebook className="w-4 h-4" />;
-      case 'whatsapp': return <MessageSquare className="w-4 h-4" />;
       default: return <Code2 className="w-4 h-4" />;
     }
   };
@@ -50,7 +49,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-400 text-sm max-w-md leading-relaxed">
-              Full Stack Developer specializing in responsive interfaces, high-throughput backend APIs, and modern cloud deployment architectures.
+              Software Engineer and Backend Enthusiast specializing in high-throughput APIs, Next.js applications, and resilient cloud architectures.
             </p>
           </div>
 
@@ -103,7 +102,7 @@ export default function Footer() {
           <div className="flex items-center gap-1">
             <span>Crafted with</span>
             <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-            <span>using Next.js & Tailwind CSS</span>
+            <span>using Next.js & TypeScript</span>
           </div>
         </div>
 
@@ -111,4 +110,3 @@ export default function Footer() {
     </footer>
   );
 }
-

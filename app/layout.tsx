@@ -1,28 +1,34 @@
+import React from 'react';
+import { Metadata, Viewport } from 'next';
 import './globals.css';
 import { portfolioData } from '../data/portfolioData';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: `${portfolioData.personal.name} | ${portfolioData.personal.designation}`,
   description: `${portfolioData.personal.name} - ${portfolioData.personal.designation}. ${portfolioData.personal.tagline}`,
   keywords: [
+    'Software Engineer',
+    'Backend Engineer',
     'Full Stack Developer',
     'Next.js Developer',
     'React Developer',
-    'Software Engineer',
-    'Portfolio',
-    'Web Developer',
-    'MERN Stack'
+    'Node.js Engineer',
+    'Portfolio'
   ],
   authors: [{ name: portfolioData.personal.name }],
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: '#090d16',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>

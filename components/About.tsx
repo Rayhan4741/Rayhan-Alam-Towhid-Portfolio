@@ -1,12 +1,12 @@
 'use client';
 
+import React from 'react';
 import { 
   Trophy, 
   Camera, 
   BookOpen, 
   Cpu, 
   Compass, 
-  HeartHandshake, 
   Sparkles, 
   Terminal,
   CheckCircle2,
@@ -17,7 +17,7 @@ import { portfolioData } from '../data/portfolioData';
 export default function About() {
   const { about } = portfolioData;
 
-  const getHobbyIcon = (iconName) => {
+  const getHobbyIcon = (iconName: string) => {
     switch (iconName) {
       case 'Trophy': return <Trophy className="w-5 h-5 text-amber-400" />;
       case 'Camera': return <Camera className="w-5 h-5 text-cyan-400" />;
@@ -58,7 +58,7 @@ export default function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">My Programming Journey</h3>
-                <p className="text-xs text-slate-400 font-mono">From First "Hello World" to Full-Stack Systems</p>
+                <p className="text-xs text-slate-400 font-mono">From C/C++ Algorithms to Scalable Backends</p>
               </div>
             </div>
 
@@ -83,7 +83,7 @@ export default function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">The Work I Enjoy</h3>
-                <p className="text-xs text-slate-400 font-mono">Architectures & Experiences I Love Crafting</p>
+                <p className="text-xs text-slate-400 font-mono">Architectures & Systems I Love Crafting</p>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ export default function About() {
               </p>
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 font-mono text-xs text-cyan-400/90 flex items-start gap-2">
                 <span className="text-slate-500 select-none">&gt;</span>
-                <span>Focus: Sub-second latency, accessible keyboard flows, and zero unnecessary re-renders.</span>
+                <span>Focus: Sub-second API latency, resilient schema design, and zero unhandled errors.</span>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function About() {
                 <span className="text-xs font-normal text-slate-400 font-mono">Hobbies & Interests</span>
               </h3>
               <p className="text-slate-400 text-sm mt-1">
-                Life outside the terminal that fuels creative problem solving and visual inspiration.
+                Life outside the terminal that fuels creative problem solving and teamwork.
               </p>
             </div>
           </div>
@@ -154,4 +154,3 @@ export default function About() {
     </section>
   );
 }
-

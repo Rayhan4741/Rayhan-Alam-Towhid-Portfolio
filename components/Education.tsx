@@ -1,13 +1,13 @@
 'use client';
 
+import React from 'react';
 import { 
   GraduationCap, 
   Calendar, 
   MapPin, 
   Award, 
   BookOpen, 
-  CheckCircle2,
-  Sparkles
+  CheckCircle2
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
@@ -92,4 +92,3 @@ export default function Education() {
     </section>
   );
 }
-

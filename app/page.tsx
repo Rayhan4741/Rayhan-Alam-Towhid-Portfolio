@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 import ResumeModal from '../components/ResumeModal';
 
 export default function HomePage() {
-  const [isResumeOpen, setIsResumeOpen] = useState(false);
+  const [isResumeOpen, setIsResumeOpen] = useState<boolean>(false);
 
   return (
     <div className="relative min-h-screen bg-[#090d16] text-slate-100 flex flex-col justify-between">
@@ -40,7 +40,7 @@ export default function HomePage() {
         {/* Section 9: Featured Projects (Card format with View More / Details buttons) */}
         <Projects />
 
-        {/* Section 10: Contact Information (Email, Phone, WhatsApp, Form) */}
+        {/* Section 10: Contact Information (Email, Direct Message Form) */}
         <Contact />
       </main>
 
@@ -55,4 +55,3 @@ export default function HomePage() {
     </div>
   );
 }
-

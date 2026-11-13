@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { 
@@ -13,15 +13,17 @@ import {
   ArrowRight,
   Code2,
   Sparkles,
-  MapPin,
-  CheckCircle2,
-  FileText
+  MapPin
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
-export default function Hero({ onOpenResume }) {
+interface HeroProps {
+  onOpenResume?: () => void;
+}
+
+export default function Hero({ onOpenResume }: HeroProps) {
   const { personal, socialLinks } = portfolioData;
-  const [titleIndex, setTitleIndex] = useState(0);
+  const [titleIndex, setTitleIndex] = useState<number>(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -30,7 +32,7 @@ export default function Hero({ onOpenResume }) {
     return () => clearInterval(timer);
   }, [personal.secondaryTitles.length]);
 
-  const getSocialIcon = (name) => {
+  const getSocialIcon = (name: string) => {
     switch (name.toLowerCase()) {
       case 'github': return <Github className="w-5 h-5" />;
       case 'linkedin': return <Linkedin className="w-5 h-5" />;
@@ -171,7 +173,7 @@ export default function Hero({ onOpenResume }) {
                 </div>
                 <div className="text-left">
                   <div className="text-xs font-mono text-slate-400">Primary Stack</div>
-                  <div className="text-sm font-bold text-white">Next.js & MERN</div>
+                  <div className="text-sm font-bold text-white">Next.js & Node.js</div>
                 </div>
               </div>
 
@@ -181,8 +183,8 @@ export default function Hero({ onOpenResume }) {
                   <Sparkles className="w-5 h-5" />
                 </div>
                 <div className="text-left">
-                  <div className="text-xs font-mono text-slate-400">Experience</div>
-                  <div className="text-sm font-bold text-white">2+ Years Active</div>
+                  <div className="text-xs font-mono text-slate-400">Achievements</div>
+                  <div className="text-sm font-bold text-white">CSE Fest Champion</div>
                 </div>
               </div>
 
@@ -191,16 +193,16 @@ export default function Hero({ onOpenResume }) {
             {/* Quick stats below photo */}
             <div className="grid grid-cols-3 gap-4 mt-10 w-full max-w-md text-center">
               <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                <div className="text-2xl font-black text-emerald-400 font-mono">15+</div>
-                <div className="text-xs text-slate-400 mt-0.5">Projects Built</div>
+                <div className="text-2xl font-black text-emerald-400 font-mono">5+</div>
+                <div className="text-xs text-slate-400 mt-0.5">Live Projects</div>
               </div>
               <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                <div className="text-2xl font-black text-cyan-400 font-mono">2+</div>
-                <div className="text-xs text-slate-400 mt-0.5">Years Coding</div>
+                <div className="text-2xl font-black text-cyan-400 font-mono">3.70</div>
+                <div className="text-xs text-slate-400 mt-0.5">BAIUST CGPA</div>
               </div>
               <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                <div className="text-2xl font-black text-emerald-400 font-mono">100%</div>
-                <div className="text-xs text-slate-400 mt-0.5">Satisfaction</div>
+                <div className="text-2xl font-black text-emerald-400 font-mono">1st</div>
+                <div className="text-xs text-slate-400 mt-0.5">Fest Award</div>
               </div>
             </div>
 
@@ -211,4 +213,3 @@ export default function Hero({ onOpenResume }) {
     </section>
   );
 }
-

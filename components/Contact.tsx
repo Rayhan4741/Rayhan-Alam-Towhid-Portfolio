@@ -1,41 +1,50 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { 
   Mail, 
-  Phone, 
-  MessageSquare, 
   MapPin, 
   Send, 
   CheckCircle2, 
-  Copy, 
-  ExternalLink,
-  Sparkles
+  Copy
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
+interface FormDataState {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+interface StatusState {
+  submitted: boolean;
+  submitting: boolean;
+  message: string;
+}
+
 export default function Contact() {
   const { personal } = portfolioData;
-  const [copied, setCopied] = useState(null);
-  const [formData, setFormData] = useState({
+  const [copied, setCopied] = useState<string | null>(null);
+  const [formData, setFormData] = useState<FormDataState>({
     name: '',
     email: '',
     subject: '',
     message: '',
   });
-  const [status, setStatus] = useState({ submitted: false, submitting: false, message: '' });
+  const [status, setStatus] = useState<StatusState>({ submitted: false, submitting: false, message: '' });
 
-  const handleCopy = (text, type) => {
+  const handleCopy = (text: string, type: string) => {
     navigator.clipboard.writeText(text);
     setCopied(type);
     setTimeout(() => setCopied(null), 2500);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatus({ submitted: false, submitting: true, message: '' });
 
@@ -71,7 +80,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-6xl mx-auto items-start">
           
-          {/* Left Column: Direct Contact Information Cards (Requirement 10) */}
+          {/* Left Column: Direct Contact Information Cards */}
           <div className="lg:col-span-5 space-y-6">
             
             <div className="p-6 rounded-3xl glass-panel border border-slate-800 space-y-6">
@@ -80,7 +89,7 @@ export default function Contact() {
                 <p className="text-xs text-slate-400">Feel free to email me directly or send a message using the form.</p>
               </div>
 
-              {/* 1. Email Address (Requirement 10) */}
+              {/* Email Address */}
               <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/90 flex items-center justify-between gap-3 group hover:border-emerald-500/40 transition-colors">
                 <div className="flex items-center gap-3 min-w-0">
                   <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
@@ -131,7 +140,7 @@ export default function Contact() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
               </span>
               <p className="text-xs text-emerald-300 leading-normal">
-                Currently open for full-time engineering roles, freelance contracts, and collaborative open-source projects.
+                Currently open for engineering internships, full-time backend roles, and collaborative open-source projects.
               </p>
             </div>
 
@@ -207,7 +216,7 @@ export default function Contact() {
                   <textarea
                     name="message"
                     required
-                    rows="5"
+                    rows={5}
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Tell me about your project, timeline, or requirements..."
@@ -242,4 +251,3 @@ export default function Contact() {
     </section>
   );
 }
-

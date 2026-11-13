@@ -1,4 +1,6 @@
-export const portfolioData = {
+import { PortfolioData } from '../types/portfolio';
+
+export const portfolioData: PortfolioData = {
   personal: {
     name: "Rayhan Alam Towhid",
     designation: "Software Engineer | Problem Solver | Curious Learner",
@@ -10,11 +12,11 @@ export const portfolioData = {
     ],
     avatarUrl: "/profile.jpg",
     tagline: "Driven Computer Science student and aspiring Software Engineer dedicated to solving complex challenges and building scalable, impactful applications.",
-    shortBio: "BSc in CSE student at BAIUST (CGPA: 3.36). Champion of BAIUST CSE Fest 2025 and Top 10 Finalist at Technovation 2025 National Hackathon.",
+    shortBio: "BSc in CSE student at BAIUST (CGPA: 3.70). Champion of BAIUST CSE Fest 2025 and Top 10 Finalist at Technovation 2025 National Hackathon.",
     location: "Cumilla, Bangladesh (Available Worldwide for Remote & Onsite)",
     email: "rayhanalamtowhid@gmail.com",
     status: "Available for New Opportunities",
-    resumeDownloadPath: "/resume.html", // Can also open or print directly
+    resumeDownloadPath: "/resume.html",
   },
 
   socialLinks: [

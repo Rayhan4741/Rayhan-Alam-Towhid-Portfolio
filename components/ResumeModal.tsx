@@ -1,10 +1,10 @@
 'use client';
 
+import React from 'react';
 import {
   X,
   Download,
   Printer,
-  Mail,
   ExternalLink,
   FileText,
   Award,
@@ -17,7 +17,12 @@ import {
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
-export default function ResumeModal({ isOpen, onClose }) {
+interface ResumeModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
   if (!isOpen) return null;
 
   const { personal, education, experience, achievements } = portfolioData;
@@ -27,7 +32,6 @@ export default function ResumeModal({ isOpen, onClose }) {
   };
 
   const handleDownload = () => {
-    // Open resume.html or initiate download
     const a = document.createElement('a');
     a.href = '/resume.html';
     a.target = '_blank';
@@ -60,7 +64,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div className="flex items-center gap-2">
             <button
               onClick={handleDownload}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold text-xs hover:from-emerald-400 hover:to-cyan-400 transition-colors shadow-sm"
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold text-xs hover:from-emerald-400 hover:to-cyan-400 transition-colors shadow-sm cursor-pointer"
               title="Download Resume HTML"
             >
               <Download className="w-3.5 h-3.5" />
@@ -69,7 +73,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 
             <button
               onClick={handlePrint}
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800 text-slate-300 font-medium text-xs hover:bg-slate-700 hover:text-white transition-colors border border-slate-700"
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800 text-slate-300 font-medium text-xs hover:bg-slate-700 hover:text-white transition-colors border border-slate-700 cursor-pointer"
               title="Print Resume"
             >
               <Printer className="w-3.5 h-3.5" />
@@ -89,7 +93,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 
             <button
               onClick={onClose}
-              className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+              className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -210,7 +214,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span className="text-xs font-mono text-slate-400">Cumilla, BD</span>
               </div>
               <p className="text-cyan-400 font-medium">BSc in Computer Science and Engineering (Apr 2024 – Mar 2028)</p>
-              <p className="text-emerald-400 font-mono font-semibold">Current CGPA: 3.36 / 4.00</p>
+              <p className="text-emerald-400 font-mono font-semibold">Current CGPA: 3.70 / 4.00</p>
             </div>
           </div>
 

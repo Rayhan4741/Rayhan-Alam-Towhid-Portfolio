@@ -1,17 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { 
   FolderGit2, 
   ExternalLink, 
   Github, 
-  ArrowRight, 
-  Layers, 
-  Sparkles,
-  Eye,
-  Code
+  ArrowRight
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
@@ -156,4 +152,3 @@ export default function Projects() {
     </section>
   );
 }
-

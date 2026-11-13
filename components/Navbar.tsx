@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { 
@@ -8,16 +8,18 @@ import {
   X, 
   Download, 
   Terminal, 
-  Sparkles,
-  ExternalLink,
   ChevronRight
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
-export default function Navbar({ onOpenResume }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('hero');
+interface NavbarProps {
+  onOpenResume?: () => void;
+}
+
+export default function Navbar({ onOpenResume }: NavbarProps) {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [activeSection, setActiveSection] = useState<string>('hero');
   const pathname = usePathname();
   const isHomePage = pathname === '/';
 
@@ -170,4 +172,3 @@ export default function Navbar({ onOpenResume }) {
     </header>
   );
 }
-

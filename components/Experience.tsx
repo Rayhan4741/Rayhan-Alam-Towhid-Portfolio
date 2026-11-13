@@ -1,13 +1,12 @@
 'use client';
 
+import React from 'react';
 import { 
   Briefcase, 
   Calendar, 
   MapPin, 
   Building2, 
-  CheckCircle2, 
-  Sparkles,
-  ArrowUpRight
+  CheckCircle2
 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
@@ -113,4 +112,3 @@ export default function Experience() {
     </section>
   );
 }
-
