@@ -98,3 +98,5 @@
 
 - [2026-11-14 02:14:05] feat(experience): add technology tags for each job role
 
+- [2026-11-14 02:14:05] feat(projects): create featured projects section layout
+
