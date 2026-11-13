@@ -74,3 +74,5 @@
 
 - [2026-11-14 02:14:03] feat(skills): add percentage badges and experience tags
 
+- [2026-11-14 02:14:04] style(skills): apply gradient fills to progress bars
+
