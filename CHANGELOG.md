@@ -126,3 +126,5 @@
 
 - [2026-11-14 02:14:07] feat(project-detail): add live demo and client repo links
 
+- [2026-11-14 02:14:07] feat(project-detail): render tech stack badge cloud
+
