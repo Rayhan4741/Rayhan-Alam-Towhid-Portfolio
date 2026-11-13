@@ -17,3 +17,4 @@
 - [2026-11-14 02:45:49] **Commit 15/43**: feat(analytics): add privacy-friendly event hooks for project link clicks
 - [2026-11-14 02:46:49] **Commit 16/43**: docs(changelog): add release notes for TypeScript migration v1.1.0
 - [2026-11-14 02:47:49] **Commit 17/43**: perf(bundle): eliminate unused CSS utility classes
+- [2026-11-14 02:48:49] **Commit 18/43**: refactor(experience): format timeline connecting borders with dashed styling
