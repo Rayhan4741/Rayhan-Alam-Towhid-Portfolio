@@ -182,3 +182,5 @@
 
 - [2026-11-14 02:14:11] fix(build): add prebuild hook for static chunks on Windows
 
+- [2026-11-14 02:14:11] style(layout): add theme color and viewport export
+
