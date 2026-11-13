@@ -1,17 +1,17 @@
 'use client';
 
-import { 
-  X, 
-  Download, 
-  Printer, 
-  Mail, 
-  ExternalLink, 
-  FileText, 
-  Award, 
-  BookOpen, 
-  Briefcase, 
-  Wrench, 
-  Globe, 
+import {
+  X,
+  Download,
+  Printer,
+  Mail,
+  ExternalLink,
+  FileText,
+  Award,
+  BookOpen,
+  Briefcase,
+  Wrench,
+  Globe,
   Heart,
   CheckCircle2
 } from 'lucide-react';
@@ -39,7 +39,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md animate-in fade-in">
-      <div 
+      <div
         className="relative w-full max-w-4xl max-h-[92vh] bg-slate-900 border border-slate-700/80 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
@@ -99,7 +99,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 
         {/* Scrollable Document Body */}
         <div className="p-6 sm:p-10 overflow-y-auto space-y-7 text-slate-200 text-sm leading-relaxed bg-[#0b0f19]">
-          
+
           {/* Resume Header */}
           <div className="text-center border-b border-slate-800/90 pb-6">
             <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">{personal.name}</h1>
@@ -210,7 +210,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span className="text-xs font-mono text-slate-400">Cumilla, BD</span>
               </div>
               <p className="text-cyan-400 font-medium">BSc in Computer Science and Engineering (Apr 2024 – Mar 2028)</p>
-              <p className="text-emerald-400 font-mono font-semibold">Current CGPA: 3.70 / 4.00</p>
+              <p className="text-emerald-400 font-mono font-semibold">Current CGPA: 3.36 / 4.00</p>
             </div>
           </div>
 
