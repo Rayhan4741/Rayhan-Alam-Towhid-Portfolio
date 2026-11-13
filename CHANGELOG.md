@@ -176,3 +176,5 @@
 
 - [2026-11-14 02:14:11] docs(readme): add feature requirements checklist
 
+- [2026-11-14 02:14:11] docs(readme): add local setup and run instructions
+
