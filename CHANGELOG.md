@@ -154,3 +154,5 @@
 
 - [2026-11-14 02:14:09] feat(footer): add social links and copyright notice
 
+- [2026-11-14 02:14:09] feat(footer): add smooth scroll-to-top button
+
