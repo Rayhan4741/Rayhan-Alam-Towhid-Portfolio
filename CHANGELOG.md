@@ -68,3 +68,5 @@
 
 - [2026-11-14 02:14:03] feat(skills): build technical skills section layout
 
+- [2026-11-14 02:14:03] feat(skills): implement category filter tabs
+
