@@ -64,3 +64,5 @@
 
 - [2026-11-14 02:14:03] feat(about): add competitive problem solving card
 
+- [2026-11-14 02:14:03] feat(about): add PC hardware tuning card
+
