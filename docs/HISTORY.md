@@ -23,3 +23,4 @@
 - [2026-11-14 02:51:50] **Commit 21/43**: refactor(types): export standalone ProjectCategory union type
 - [2026-11-14 02:52:50] **Commit 22/43**: style(buttons): refine magnetic button press micro-interaction
 - [2026-11-14 02:53:50] **Commit 23/43**: perf(render): memoize project filter pill callbacks
+- [2026-11-14 02:54:50] **Commit 24/43**: feat(seo): add sitemap and robots.txt generation helper
