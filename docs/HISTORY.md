@@ -19,3 +19,4 @@
 - [2026-11-14 02:47:49] **Commit 17/43**: perf(bundle): eliminate unused CSS utility classes
 - [2026-11-14 02:48:49] **Commit 18/43**: refactor(experience): format timeline connecting borders with dashed styling
 - [2026-11-14 02:49:49] **Commit 19/43**: style(education): highlight BAIUST honors and CGPA with gradient badge
+- [2026-11-14 02:50:50] **Commit 20/43**: fix(resume): verify print media query styles for clean PDF export
