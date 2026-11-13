@@ -116,3 +116,5 @@
 
 - [2026-11-14 02:14:06] feat(projects): add DevSphere collaborative workspace
 
+- [2026-11-14 02:14:06] feat(projects): implement View More details button
+
