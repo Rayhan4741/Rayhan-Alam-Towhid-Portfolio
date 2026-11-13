@@ -204,3 +204,5 @@
 
 - [2026-11-14 02:14:12] chore(changelog): update release history and milestones
 
+- [2026-11-14 02:14:13] chore(release): finalize portfolio v1.0.0 release candidate
+
