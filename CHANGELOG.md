@@ -164,3 +164,5 @@
 
 - [2026-11-14 02:14:10] style(resume): calibrate resume print stylesheet
 
+- [2026-11-14 02:14:10] fix(contact): remove phone number per user preference
+
