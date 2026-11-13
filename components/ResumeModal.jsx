@@ -115,8 +115,8 @@ export default function ResumeModal({ isOpen, onClose }) {
                 LinkedIn
               </a>
               <span>•</span>
-              <a href="https://github.com/Rayhan6244" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">
-                GitHub (@Rayhan6244)
+              <a href="https://github.com/Rayhan4741" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">
+                GitHub (@Rayhan4741)
               </a>
               <span>•</span>
               <span className="text-slate-400">Cumilla, BD</span>

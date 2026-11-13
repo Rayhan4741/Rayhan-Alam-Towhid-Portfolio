@@ -20,9 +20,9 @@ export const portfolioData = {
   socialLinks: [
     {
       name: "GitHub",
-      url: "https://github.com/Rayhan6244",
+      url: "https://github.com/Rayhan4741",
       icon: "Github",
-      username: "@Rayhan6244"
+      username: "@Rayhan4741"
     },
     {
       name: "LinkedIn",
@@ -195,7 +195,7 @@ export const portfolioData = {
       techStack: ["Next.js", "React", "TypeScript", "TailwindCSS", "Node.js", "MongoDB", "Stripe API"],
       briefDescription: "A modern creative space reservation platform enabling photographers, videographers, and artists to discover, filter, and instantly book production studios with real-time slot scheduling and secure payment processing.",
       liveLink: "https://studiospace-client-zaj7.vercel.app/",
-      clientRepoLink: "https://github.com/Rayhan6244/studiospace-client",
+      clientRepoLink: "https://github.com/Rayhan4741/studiospace-client",
       overview: "StudioSpace was developed to remove the manual friction of booking professional photo, video, and audio studios. It features an interactive space discovery map, hourly slot reservation calendars, host listing management, high-resolution media galleries, and instant booking confirmations.",
       challenges: [
         "Managing complex hourly booking schedules to eliminate double-booking across variable host operating hours and weekend buffers.",
@@ -223,7 +223,7 @@ export const portfolioData = {
       techStack: ["Next.js", "React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Chart.js"],
       briefDescription: "A community-driven market intelligence platform designed to track, compare, and visualize daily prices of essential kitchen commodities across different local bazars, promoting consumer price transparency.",
       liveLink: "https://bazar-obostha.vercel.app/",
-      clientRepoLink: "https://github.com/Rayhan6244/bazar-obostha",
+      clientRepoLink: "https://github.com/Rayhan4741/bazar-obostha",
       overview: "Bazar Obostha empowers everyday consumers by breaking price information asymmetry. Users can check current prices for essentials like rice, oil, onions, and vegetables, view historical 30-day price trend graphs, report abnormal price spikes, and find nearby bazars offering fair pricing.",
       challenges: [
         "Preventing spam and manipulated price submissions from distorting authentic market averages.",
@@ -251,7 +251,7 @@ export const portfolioData = {
       techStack: ["Node.js", "Express.js", "PostgreSQL", "MySQL", "Redis", "Docker", "JWT Auth"],
       briefDescription: "A robust microservices-based backend for a large-scale e-commerce platform built to handle high concurrency, atomic inventory reservations, and sub-15ms cached product responses.",
       liveLink: "https://ecommerce-backend-demo.vercel.app",
-      clientRepoLink: "https://github.com/Rayhan6244",
+      clientRepoLink: "https://github.com/Rayhan4741",
       overview: "Engineered to withstand flash-sale traffic spikes, this backend decouples order processing, product catalogs, and user identity into independent services. It features connection-pooled database queries, automated Redis caching with TTL invalidation, and comprehensive JWT security middleware.",
       challenges: [
         "Preventing inventory overselling race conditions when hundreds of shoppers simultaneously attempt to checkout the last available SKU.",
@@ -279,7 +279,7 @@ export const portfolioData = {
       techStack: ["React", "Next.js", "Node.js", "Socket.io", "MongoDB", "TailwindCSS", "JWT Auth"],
       briefDescription: "A responsive real-time chat application featuring persistent room conversations, active user status, message read receipts, typing indicators, and instant notification dispatch.",
       liveLink: "https://realtime-chat-rayhan.vercel.app",
-      clientRepoLink: "https://github.com/Rayhan6244",
+      clientRepoLink: "https://github.com/Rayhan4741",
       overview: "Designed for seamless communication, this platform delivers sub-50ms message delivery using WebSockets over Socket.io. It supports private direct messaging, persistent group channels, offline message queues, and a clean, responsive dark-mode user interface.",
       challenges: [
         "Managing WebSocket reconnection state when users switch between mobile networks or experience intermittent packet drops.",
@@ -307,7 +307,7 @@ export const portfolioData = {
       techStack: ["Next.js 14", "Python", "FastAPI", "OpenAI / Gemini API", "MySQL", "TailwindCSS"],
       briefDescription: "An intelligent project management tool that analyzes task descriptions, automatically estimates story points, identifies workflow bottlenecks, and assists in sprint prioritization.",
       liveLink: "https://ai-taskmanager-rayhan.vercel.app",
-      clientRepoLink: "https://github.com/Rayhan6244",
+      clientRepoLink: "https://github.com/Rayhan4741",
       overview: "This tool takes agile sprint planning to the next level by combining modern Kanban boards with AI assistance. It parses engineering issue descriptions, flags potential dependencies, estimates completion effort, and dynamically suggests optimal task assignments.",
       challenges: [
         "Ensuring low-latency streaming of AI analysis without blocking the main dashboard UI thread.",
@@ -335,7 +335,7 @@ export const portfolioData = {
       techStack: ["Next.js", "React", "Node.js", "Socket.io", "Monaco Editor", "TailwindCSS", "MongoDB"],
       briefDescription: "A browser-based collaborative workspace that enables distributed developers to write code simultaneously with live multi-cursor tracking and syntax highlighting for 40+ languages.",
       liveLink: "https://devsphere-workspace.vercel.app",
-      clientRepoLink: "https://github.com/Rayhan6244",
+      clientRepoLink: "https://github.com/Rayhan4741",
       overview: "DevSphere provides remote developers with instant code pairing rooms without requiring local environment configuration. It features virtualized code rendering, sandboxed iframe previews, and real-time team presence.",
       challenges: [
         "Resolving concurrent typing conflicts when two developers edit identical lines of code simultaneously.",

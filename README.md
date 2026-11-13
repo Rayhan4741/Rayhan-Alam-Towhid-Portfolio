@@ -95,7 +95,7 @@ A modern, high-performance, and fully responsive personal portfolio website buil
 ### Option 1: Deploy to Vercel (Recommended for Next.js - 2 Minutes)
 1. Push this repository to your GitHub account:
    ```bash
-   git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+   git remote add origin https://github.com/Rayhan4741/<your-repo-name>.git
    git branch -M main
    git push -u origin main
    ```
