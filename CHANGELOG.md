@@ -52,3 +52,5 @@
 
 - [2026-11-14 02:14:02] feat(about): add programming journey narrative
 
+- [2026-11-14 02:14:02] feat(about): describe preferred backend architectures
+
