@@ -186,6 +186,62 @@ export const portfolioData = {
 
   projects: [
     {
+      id: "studiospace",
+      name: "StudioSpace - Creative Studio Booking Platform",
+      tagline: "All-in-one studio rental and creative workspace booking platform connecting creators with premium production spaces.",
+      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+      featured: true,
+      category: "Full Stack & Marketplace",
+      techStack: ["Next.js", "React", "TypeScript", "TailwindCSS", "Node.js", "MongoDB", "Stripe API"],
+      briefDescription: "A modern creative space reservation platform enabling photographers, videographers, and artists to discover, filter, and instantly book production studios with real-time slot scheduling and secure payment processing.",
+      liveLink: "https://studiospace-client-zaj7.vercel.app/",
+      clientRepoLink: "https://github.com/Rayhan6244/studiospace-client",
+      overview: "StudioSpace was developed to remove the manual friction of booking professional photo, video, and audio studios. It features an interactive space discovery map, hourly slot reservation calendars, host listing management, high-resolution media galleries, and instant booking confirmations.",
+      challenges: [
+        "Managing complex hourly booking schedules to eliminate double-booking across variable host operating hours and weekend buffers.",
+        "Ensuring fast client-side rendering and responsive image galleries with multiple high-resolution 4K studio interior photos.",
+        "Structuring flexible role-based access control (RBAC) separating studio Hosts, Creators/Renters, and Platform Admins."
+      ],
+      solutions: [
+        "Designed an atomic slot reservation engine with optimistic locking to guarantee that temporary holds expire automatically if payment is not completed within 10 minutes.",
+        "Leveraged Next.js Image optimization with responsive blur-up placeholders and WebP delivery, decreasing initial view payload by 65%.",
+        "Constructed JWT session middleware with granular permission scopes for studio listing verification and host payout settlements."
+      ],
+      futurePlans: [
+        "Introduce a virtual 360-degree interactive studio tour using WebGL/Three.js.",
+        "Add an integrated equipment add-on rental checkout (lighting kits, cinema cameras, audio rigs).",
+        "Automate smart pricing recommendations for hosts based on peak booking demand and local seasonal trends."
+      ]
+    },
+    {
+      id: "bazar-obostha",
+      name: "Bazar Obostha - Commodity Price Intelligence",
+      tagline: "Real-time crowdsourced commodity price tracking and market intelligence platform for consumers in Bangladesh.",
+      image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+      featured: true,
+      category: "Web App & Data Intelligence",
+      techStack: ["Next.js", "React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Chart.js"],
+      briefDescription: "A community-driven market intelligence platform designed to track, compare, and visualize daily prices of essential kitchen commodities across different local bazars, promoting consumer price transparency.",
+      liveLink: "https://bazar-obostha.vercel.app/",
+      clientRepoLink: "https://github.com/Rayhan6244/bazar-obostha",
+      overview: "Bazar Obostha empowers everyday consumers by breaking price information asymmetry. Users can check current prices for essentials like rice, oil, onions, and vegetables, view historical 30-day price trend graphs, report abnormal price spikes, and find nearby bazars offering fair pricing.",
+      challenges: [
+        "Preventing spam and manipulated price submissions from distorting authentic market averages.",
+        "Rendering interactive historical price comparison charts smoothly on low-bandwidth mobile devices.",
+        "Normalizing varying commodity units (kg, liter, dozen, hali) across regional markets into comparable standard baselines."
+      ],
+      solutions: [
+        "Implemented a statistical outlier detection filter (Interquartile Range - IQR) combined with community upvoting to automatically flag suspect submissions.",
+        "Utilized Chart.js with canvas hardware acceleration and debounced data windowing for silky-smooth 60fps graph interactions.",
+        "Built a centralized unit conversion engine that normalizes traditional local measurement metrics into standard metric units before computing city-wide price indexes."
+      ],
+      futurePlans: [
+        "Integrate SMS and WhatsApp alerts for significant price changes on tracked household staples.",
+        "Develop AI predictive pricing models to forecast seasonal commodity inflation based on historical agricultural yield patterns.",
+        "Add bilingual localized Bengali voice search for accessible queries by non-technical elder shoppers."
+      ]
+    },
+    {
       id: "ecommerce-backend",
       name: "Scalable E-Commerce Backend & Microservices",
       tagline: "High-throughput microservices architecture with Node.js, Express, PostgreSQL/MySQL, and Redis caching.",
