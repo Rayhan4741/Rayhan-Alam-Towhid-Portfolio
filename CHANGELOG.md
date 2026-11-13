@@ -30,3 +30,5 @@
 
 - [2026-11-14 02:14:00] style(navbar): apply blur backdrop and sticky shadow
 
+- [2026-11-14 02:14:00] feat(hero): build hero introduction section
+
