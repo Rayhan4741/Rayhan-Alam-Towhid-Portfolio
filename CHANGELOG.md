@@ -186,3 +186,5 @@
 
 - [2026-11-14 02:14:11] perf(css): purge unused styles and optimize bundle size
 
+- [2026-11-14 02:14:11] perf(images): configure responsive image delivery
+
