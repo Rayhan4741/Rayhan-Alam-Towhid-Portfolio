@@ -198,3 +198,5 @@
 
 - [2026-11-14 02:14:12] test(modal): verify resume modal open and close flow
 
+- [2026-11-14 02:14:12] test(links): verify external links have rel noopener
+
