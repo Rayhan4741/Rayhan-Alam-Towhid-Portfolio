@@ -188,3 +188,5 @@
 
 - [2026-11-14 02:14:11] perf(images): configure responsive image delivery
 
+- [2026-11-14 02:14:11] refactor(components): extract reusable section headers
+
