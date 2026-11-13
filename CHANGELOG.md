@@ -184,3 +184,5 @@
 
 - [2026-11-14 02:14:11] style(layout): add theme color and viewport export
 
+- [2026-11-14 02:14:11] perf(css): purge unused styles and optimize bundle size
+
