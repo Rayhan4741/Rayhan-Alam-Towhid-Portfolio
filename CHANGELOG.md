@@ -168,3 +168,5 @@
 
 - [2026-11-14 02:14:10] feat(profile): integrate Rayhan Alam Towhid profile photo
 
+- [2026-11-14 02:14:10] feat(profile): update LinkedIn handle to rayhan18-cse-baiust
+
