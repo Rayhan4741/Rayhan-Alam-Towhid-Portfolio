@@ -138,3 +138,5 @@
 
 - [2026-11-14 02:14:08] feat(contact): design get in touch section layout
 
+- [2026-11-14 02:14:08] feat(contact): add direct email contact card
+
