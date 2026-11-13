@@ -136,3 +136,5 @@
 
 - [2026-11-14 02:14:08] feat(project-detail): add explore other projects grid
 
+- [2026-11-14 02:14:08] feat(contact): design get in touch section layout
+
