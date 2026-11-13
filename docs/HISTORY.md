@@ -15,3 +15,4 @@
 - [2026-11-14 02:43:49] **Commit 13/43**: refactor(projects): enhance card transition hover transform duration
 - [2026-11-14 02:44:49] **Commit 14/43**: style(modal): polish resume modal backdrop blur intensity
 - [2026-11-14 02:45:49] **Commit 15/43**: feat(analytics): add privacy-friendly event hooks for project link clicks
+- [2026-11-14 02:46:49] **Commit 16/43**: docs(changelog): add release notes for TypeScript migration v1.1.0
