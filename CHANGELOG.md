@@ -76,3 +76,5 @@
 
 - [2026-11-14 02:14:04] style(skills): apply gradient fills to progress bars
 
+- [2026-11-14 02:14:04] feat(skills): add category summary metric cards
+
