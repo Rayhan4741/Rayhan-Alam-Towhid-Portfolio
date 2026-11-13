@@ -20,3 +20,5 @@
 
 - [2026-11-14 02:14:00] feat(navbar): implement brand logo with terminal icon
 
+- [2026-11-14 02:14:00] feat(navbar): add desktop navigation links
+
