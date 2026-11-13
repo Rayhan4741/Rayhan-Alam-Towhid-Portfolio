@@ -96,3 +96,5 @@
 
 - [2026-11-14 02:14:05] feat(experience): add 2025 mini internship details
 
+- [2026-11-14 02:14:05] feat(experience): add technology tags for each job role
+
