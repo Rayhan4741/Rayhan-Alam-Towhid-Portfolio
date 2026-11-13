@@ -77,7 +77,7 @@ export default function Contact() {
             <div className="p-6 rounded-3xl glass-panel border border-slate-800 space-y-6">
               <div>
                 <h3 className="text-xl font-bold text-white mb-1">Direct Contact Details</h3>
-                <p className="text-xs text-slate-400">Feel free to email, call, or message me directly on WhatsApp.</p>
+                <p className="text-xs text-slate-400">Feel free to email me directly or send a message using the form.</p>
               </div>
 
               {/* 1. Email Address (Requirement 10) */}
@@ -107,59 +107,6 @@ export default function Contact() {
                     <Copy className="w-4 h-4" />
                   )}
                 </button>
-              </div>
-
-              {/* 2. Phone Number (Requirement 10) */}
-              <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/90 flex items-center justify-between gap-3 group hover:border-cyan-500/40 transition-colors">
-                <div className="flex items-center gap-3 min-w-0">
-                  <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <div className="min-w-0">
-                    <div className="text-xs font-mono text-slate-400">Phone Number</div>
-                    <a
-                      href={`tel:${personal.phone}`}
-                      className="text-sm font-semibold text-white hover:text-cyan-400 truncate block transition-colors"
-                    >
-                      {personal.phone}
-                    </a>
-                  </div>
-                </div>
-                <button
-                  onClick={() => handleCopy(personal.phone, 'phone')}
-                  className="p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white transition-colors"
-                  title="Copy Phone Number"
-                >
-                  {copied === 'phone' ? (
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  ) : (
-                    <Copy className="w-4 h-4" />
-                  )}
-                </button>
-              </div>
-
-              {/* 3. WhatsApp Direct Chat (Requirement 10) */}
-              <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/90 flex items-center justify-between gap-3 group hover:border-emerald-500/40 transition-colors">
-                <div className="flex items-center gap-3 min-w-0">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
-                    <MessageSquare className="w-5 h-5" />
-                  </div>
-                  <div className="min-w-0">
-                    <div className="text-xs font-mono text-slate-400">WhatsApp (Instant Chat)</div>
-                    <span className="text-sm font-semibold text-white block">
-                      {personal.phone}
-                    </span>
-                  </div>
-                </div>
-                <a
-                  href={`https://wa.me/${personal.whatsapp}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold text-xs flex items-center gap-1 hover:bg-emerald-400 transition-colors"
-                >
-                  <span>Chat</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
               </div>
 
               {/* Location */}

@@ -23,17 +23,23 @@ export default function ResumeModal({ isOpen, onClose }) {
   };
 
   const handleDownload = () => {
-    // Generates a clean text/pdf formatted download or opens print dialog
-    const element = document.createElement("a");
+    if (personal.resumeDownloadPath) {
+      const a = document.createElement('a');
+      a.href = personal.resumeDownloadPath;
+      a.download = 'Rayhan_Alam_Towhid_Resume.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      return;
+    }
     const resumeText = `
 =====================================================
 ${personal.name.toUpperCase()} - ${personal.designation.toUpperCase()}
 =====================================================
 Email: ${personal.email}
-Phone: ${personal.phone}
-WhatsApp: ${personal.phone}
 Location: ${personal.location}
-Portfolio: https://alexmorgan-portfolio.vercel.app
+GitHub: https://github.com/Rayhan4741
+LinkedIn: https://linkedin.com/in/rayhanalam
 
 PROFESSIONAL SUMMARY
 --------------------
@@ -140,7 +146,6 @@ ${projects.map(p => `
             <p className="text-emerald-400 font-mono font-bold text-base mt-1">{personal.designation}</p>
             <div className="flex flex-wrap gap-4 mt-3 text-xs text-slate-400 font-mono">
               <span className="flex items-center gap-1"><Mail className="w-3 h-3 text-emerald-400" /> {personal.email}</span>
-              <span className="flex items-center gap-1"><Phone className="w-3 h-3 text-cyan-400" /> {personal.phone}</span>
               <span className="flex items-center gap-1"><MapPin className="w-3 h-3 text-slate-400" /> {personal.location}</span>
             </div>
           </div>

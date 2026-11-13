@@ -13,8 +13,6 @@ export const portfolioData = {
     shortBio: "Computer Science & Engineering student at BAIUST and passionate Backend Engineer. Champion of the 1st BAIUST CSE Fest, with expertise in Node.js, Express, PostgreSQL, Next.js, and cloud systems.",
     location: "Cumilla / Dhaka, Bangladesh (Available Worldwide for Remote & Onsite)",
     email: "rayhanalamtowhid@gmail.com",
-    phone: "+880 1712-345678",
-    whatsapp: "+8801712345678",
     status: "Available for New Opportunities",
     resumeDownloadPath: "/Rayhan_Alam_Towhid_Resume.pdf",
   },
@@ -43,12 +41,6 @@ export const portfolioData = {
       url: "https://facebook.com",
       icon: "Facebook",
       username: "rayhan.alam.towhid"
-    },
-    {
-      name: "WhatsApp",
-      url: "https://wa.me/8801712345678",
-      icon: "MessageSquare",
-      username: "+880 1712-345678"
     }
   ],
 
