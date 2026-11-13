@@ -4,3 +4,5 @@
 
 - [2026-11-14 02:13:58] feat(tailwind): configure custom colors and font families
 
+- [2026-11-14 02:13:59] style(globals): add custom scrollbar styles in globals.css
+
