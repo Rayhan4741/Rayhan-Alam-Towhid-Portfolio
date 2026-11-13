@@ -40,3 +40,4 @@
 - [2026-11-14 03:08:52] **Commit 38/43**: refactor(about): streamline bio statistics layout for mobile viewports
 - [2026-11-14 03:09:52] **Commit 39/43**: style(cards): add subtle glassmorphism backdrop filter to skill pills
 - [2026-11-14 03:10:53] **Commit 40/43**: test(build): verify zero-warning static export compilation
+- [2026-11-14 03:11:53] **Commit 41/43**: feat(meta): embed canonical link tag in root layout
