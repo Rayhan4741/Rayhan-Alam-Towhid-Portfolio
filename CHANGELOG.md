@@ -18,3 +18,5 @@
 
 - [2026-11-14 02:13:59] feat(navbar): build responsive navbar header component
 
+- [2026-11-14 02:14:00] feat(navbar): implement brand logo with terminal icon
+
