@@ -102,3 +102,5 @@
 
 - [2026-11-14 02:14:05] feat(projects): design project card with hover zoom
 
+- [2026-11-14 02:14:05] feat(projects): add category badge and quick links
+
