@@ -38,3 +38,5 @@
 
 - [2026-11-14 02:14:01] style(hero): add glowing gradient ring around avatar
 
+- [2026-11-14 02:14:01] feat(hero): add floating tech stack badge
+
