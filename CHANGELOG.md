@@ -130,3 +130,5 @@
 
 - [2026-11-14 02:14:07] feat(project-detail): add project description and architecture
 
+- [2026-11-14 02:14:07] feat(project-detail): add challenges faced and solutions applied
+
