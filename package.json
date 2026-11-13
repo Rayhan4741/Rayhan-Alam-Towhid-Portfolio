@@ -6,7 +6,7 @@
     "dev": "next dev",
     "prebuild": "node -e \"const fs=require('fs'); fs.mkdirSync('.next/static/chunks/app', {recursive:true});\"",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 3001"
   },
   "dependencies": {
     "lucide-react": "^0.475.0",
