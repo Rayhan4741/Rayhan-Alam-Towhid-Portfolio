@@ -122,3 +122,5 @@
 
 - [2026-11-14 02:14:07] feat(routing): implement generateStaticParams for SSG
 
+- [2026-11-14 02:14:07] feat(project-detail): design project hero and back button
+
