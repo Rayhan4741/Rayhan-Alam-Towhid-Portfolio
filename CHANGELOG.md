@@ -144,3 +144,5 @@
 
 - [2026-11-14 02:14:08] feat(contact): implement interactive contact message form
 
+- [2026-11-14 02:14:08] feat(contact): add client-side form validation
+
