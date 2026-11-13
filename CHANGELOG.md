@@ -108,3 +108,5 @@
 
 - [2026-11-14 02:14:06] feat(projects): add Bazar Obostha commodity tracker
 
+- [2026-11-14 02:14:06] feat(projects): add E-Commerce backend microservices
+
