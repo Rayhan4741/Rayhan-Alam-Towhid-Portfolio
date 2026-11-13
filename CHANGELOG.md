@@ -8,3 +8,5 @@
 
 - [2026-11-14 02:13:59] style(globals): add glassmorphism utility classes
 
+- [2026-11-14 02:13:59] style(globals): add background radial gradient and dot grid
+
