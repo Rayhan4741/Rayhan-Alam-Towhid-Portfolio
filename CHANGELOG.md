@@ -178,3 +178,5 @@
 
 - [2026-11-14 02:14:11] docs(readme): add local setup and run instructions
 
+- [2026-11-14 02:14:11] docs(readme): document Vercel live hosting steps
+
