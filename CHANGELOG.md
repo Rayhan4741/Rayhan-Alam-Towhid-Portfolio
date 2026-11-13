@@ -140,3 +140,5 @@
 
 - [2026-11-14 02:14:08] feat(contact): add direct email contact card
 
+- [2026-11-14 02:14:08] feat(contact): add one-click copy email button
+
