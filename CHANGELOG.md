@@ -160,3 +160,5 @@
 
 - [2026-11-14 02:14:09] feat(resume): add print and PDF export action
 
+- [2026-11-14 02:14:10] feat(resume): generate standalone resume.html document
+
