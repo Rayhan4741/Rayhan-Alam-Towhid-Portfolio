@@ -22,3 +22,5 @@
 
 - [2026-11-14 02:14:00] feat(navbar): add desktop navigation links
 
+- [2026-11-14 02:14:00] feat(navbar): add scroll spy active section observer
+
