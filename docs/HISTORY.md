@@ -27,3 +27,4 @@
 - [2026-11-14 02:55:50] **Commit 25/43**: docs(license): confirm MIT license metadata in repository config
 - [2026-11-14 02:56:51] **Commit 26/43**: style(scroll): add custom sleek scrollbar for webkit browsers
 - [2026-11-14 02:57:51] **Commit 27/43**: refactor(data): standardize external project repository URLs
+- [2026-11-14 02:58:51] **Commit 28/43**: fix(viewport): prevent iOS Safari auto-zoom on input focus
