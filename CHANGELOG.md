@@ -180,3 +180,5 @@
 
 - [2026-11-14 02:14:11] docs(readme): document Vercel live hosting steps
 
+- [2026-11-14 02:14:11] fix(build): add prebuild hook for static chunks on Windows
+
