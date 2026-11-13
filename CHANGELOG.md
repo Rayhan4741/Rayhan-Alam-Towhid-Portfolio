@@ -16,3 +16,5 @@
 
 - [2026-11-14 02:13:59] feat(layout): create root layout with metadata and viewport
 
+- [2026-11-14 02:13:59] feat(navbar): build responsive navbar header component
+
