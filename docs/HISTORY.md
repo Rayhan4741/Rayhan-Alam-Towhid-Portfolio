@@ -35,3 +35,4 @@
 - [2026-11-14 03:03:52] **Commit 33/43**: refactor(modal): attach escape key listener for quick modal dismissal
 - [2026-11-14 03:04:52] **Commit 34/43**: docs(architecture): document project structure and component hierarchy
 - [2026-11-14 03:05:52] **Commit 35/43**: style(glow): enhance emerald and cyan gradient border glow effects
+- [2026-11-14 03:06:52] **Commit 36/43**: fix(link): enforce noopener noreferrer on all blank window targets
