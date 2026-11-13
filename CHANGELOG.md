@@ -82,3 +82,5 @@
 
 - [2026-11-14 02:14:04] feat(education): add BAIUST BSc in CSE degree card
 
+- [2026-11-14 02:14:04] feat(education): add 1st CSE Fest Champion distinction
+
